@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500&display=swap');
+
+:root {
+    --verde-color: #06D6A0;
+    --vermelho-color: #EF476F;
+    --azul-color: #118AB2;
+    --amarelo-color: #FFBA08;
+    --preto-color: #212529;
+    --branco-color: #F8F9FA;
+}
+
+body {
+    font-family: "Hind Siliguri", sans-serif;
+    background-color: var(--branco-color)
+}
+
+.header {
+    background-color: var(--amarelo-color);
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 25px;
+    font-size: large;
+}
+
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    background-color: var(--amarelo-color);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px;
+    font-size: 40px;
+}
+
+.btn-custom {
+    border: 2px var(--branco-color);
+    border-radius: 20px;
+}
+
+.btn-custom a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.btn-entrada:hover {
+    background-color: var(--verde-color);
+    color: white; 
+}
+
+.btn-saida:hover {
+    background-color: var(--vermelho-color);
+    color: white; 
+}
+
+.btn-metas:hover {
+    background-color: var(--azul-color);
+    color: white; 
+}
+
+@media(max-width:574px) {
+    .header {
+        font-size: medium;
+    }
+}
+
+@media(max-width:478px) {
+    .header {
+        gap: 20%;
+    }
+}
+
+@media(max-width:360px) {
+    .header {
+        gap: 10px;
+    }
+}
